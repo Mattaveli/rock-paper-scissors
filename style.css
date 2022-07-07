@@ -1,0 +1,117 @@
+body {
+  background-color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0cebb;
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  font-size: 4vw;
+  height: 20vh;
+}
+
+.title-container h1 {
+  margin: 0px;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.rock-card {
+  display: flex;
+  padding: 10px;
+}
+
+.paper-card {
+  display: flex;
+  padding: 10px;
+}
+
+.scissors-card {
+  display: flex;
+  padding: 10px;
+}
+
+.scores {
+  display: flex;
+  justify-content: center;
+  font-size: 2vw;
+  margin-top: 25px;
+}
+.left-container {
+  display: flex;
+  margin-right: 10px;
+}
+.right-container {
+  display: flex;
+  margin-left: 10px;
+}
+.player-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cpu-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.player-icon {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+.cpu-icon {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+}
+
+#btn {
+  background: #ff4742;
+  border: 1px solid #ff4742;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 3vw;
+  font-weight: 800;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btn:hover,
+#btn:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #ff4742;
+}
+
+#btn:active {
+  opacity: 0.5;
+}
