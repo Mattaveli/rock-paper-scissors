@@ -87,18 +87,20 @@ let game = (playerSelection) => {
   } else if (winner.startsWith("Tie")) {
     updateResultsSection("Tie Game");
   }
-  let gameOver = isGameOVer(cpuScore, playerScore);
+  let gameOver = isGameOver(cpuScore, playerScore);
   if (gameOver) {
     resetGame();
   }
 };
-let isGameOVer = (cpuScore, playerScore) => {
+let isGameOver = (cpuScore, playerScore) => {
   let gameOver = false;
   if (playerScore == numOfGames) {
+    updateResultsSection("Winner!");
     alert("You Win! 👍");
     gameOver = true;
   }
   if (cpuScore == numOfGames) {
+    updateResultsSection("Loser :(");
     alert("You Lose 👎");
     gameOver = true;
   }
